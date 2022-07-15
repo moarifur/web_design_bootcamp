@@ -105,8 +105,10 @@ body {
 
 .sale {
   /* border: 2px solid black; */
+  letter-spacing: 3px;
   background-color: #e41515;
-  display: inline;
+  /* display: inline; */
+  width: 50px;
   padding: 0.6% 1.9%;
   font-weight: bold;
   color: #fff;
