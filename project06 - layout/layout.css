@@ -1,0 +1,100 @@
+/* ------------Universal Selector ----------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  color: #444;
+  font-size: 24px;
+}
+
+/* ------------ Container -------------- */
+.container {
+  /* Layout */
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 80px 320px 1fr 220px;
+  /* Box model */
+  height: 100vh;
+  /* Typography */
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ------------- Navbar ------------------- */
+nav {
+  grid-row: 1 / -1;
+  background-color: #444;
+  color: #fff;
+}
+
+menu {
+  background-color: #7b55ee;
+  grid-column: 2 / -1;
+
+  /* child element */
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 20px 20px;
+}
+
+button {
+  /* display: inline-block; */
+  background-color: #5f3dc4;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 8px 12px;
+}
+
+button:last-child {
+  background-color: #d6336c;
+  margin-left: auto;
+}
+
+/* -------------- Sidebar ------------------ */
+section {
+  /* Box Model */
+  background-color: #e9ecef;
+  padding: 40px;
+  overflow: scroll;
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.email {
+  /* Box Model */
+  background-color: #adb5bd;
+  height: 96px;
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ----------- main content section */
+main {
+  background-color: #fff;
+}
+
+aside {
+  background-color: #ccc;
+}
+
+/* ------------- Common attribute for all ------------ */
+nav,
+menu,
+section,
+main,
+aside {
+  padding-top: 24px;
+}
